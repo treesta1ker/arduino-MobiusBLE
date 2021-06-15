@@ -1,5 +1,5 @@
 # MobiusBLE
-Enables connectivity with Mobius devices.
+Enables connectivity with and control of Mobius devices.
 
 This library supports BLE communication with BLE enabled Mobius devices using the [ArduinoBLE](https://www.arduino.cc/en/Reference/ArduinoBLE) library. Thus MobiusBLE can be used on Arduino boards such as the Arduino MKR WiFi 1010, Arduino UNO WiFi Rev.2, Arduino Nano 33 IoT, and Arduino Nano 33 BLE. For the Arduino MKR WiFi 1010, Arduino UNO WiFi Rev.2, and Arduino Nano 33 IoT boards, it requires the NINA module to be running [Arduino NINA-W102 firmware](https://github.com/arduino/nina-fw) v1.2.0 or later to allow ArduinoBLE and MobiusBLE to function properly.
 
@@ -27,7 +27,7 @@ This example shows some debugging and discovering methods for Mobius devices. Fi
 This example shows how a Mobius device may be controlled with an analog signal. First it will scan for BLE enabled Mobius devices (expecting just one). Once the device is discovered it will check the analog PIN (A0) every 2 seconds for the current state. When a new state is detected it will connect to the Mobius device and set the scene corresponding to the state.
 
 ## Dependencies
-MobiusBLE is heavily dependent upon the [ArduinoBLE](https://www.arduino.cc/en/Reference/ArduinoBLE) library. It was developed & tested using the version [1.2.0](https://github.com/arduino-libraries/ArduinoBLE/releases/tag/1.2.0).
+MobiusBLE is heavily dependent upon the [ArduinoBLE](https://www.arduino.cc/en/Reference/ArduinoBLE) library. It was developed & tested using the version [1.2.1](https://github.com/arduino-libraries/ArduinoBLE/releases/tag/1.2.1).
 
 ## Troubleshooting
 This library is far from perfect and the functionally can be flaky. Some common issues encountered during development include:
